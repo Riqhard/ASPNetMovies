@@ -1,0 +1,28 @@
+﻿GET https://localhost:7027/movies
+
+###
+GET https://localhost:7027/movies/3
+
+###
+POST https://localhost:7027/movies
+Content-type:application/json
+
+{
+    "Name": "The Matrix 3",
+    "Price": 30,
+    "ReleaseDate":"2003-03-31",
+    "GenreId":2
+}
+
+###
+PUT https://localhost:7027/movies/7
+Content-type:application/json
+
+{
+    "Name": "The Matrix 3",
+    "Price": 35
+}
+###
+DELETE https://localhost:7027/movies/7
+###
+GET https://localhost:7027/genres
